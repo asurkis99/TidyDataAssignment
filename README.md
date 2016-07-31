@@ -11,14 +11,14 @@ This is then unzipped and results in the following file within the directory "UC
 * features.txt: list of all features variables
 * README.txt: description of dataset 
 * test directory
-+ subject\_test.txt:  list of subjectIDs for each observation in test set
-+ X\_test.txt:  data for all observations in test set
-+ y\_test.txt:  list of activity codes for each observation in test set
-+ Inertial Signals directory:  not used for this project
+** subject\_test.txt:  list of subjectIDs for each observation in test set
+** X\_test.txt:  data for all observations in test set
+** y\_test.txt:  list of activity codes for each observation in test set
+** Inertial Signals directory:  not used for this project
 * training directory
-+ subject\_training.txt: list of subjectIDs for each observation in training set
-+ X\_training.txt: data for all observations in training set
-+ y\_training.txt: list of activity codes for each observation in training set
-+ Inertial Signals directory:  not used for this project
+** subject\_training.txt: list of subjectIDs for each observation in training set
+** X\_training.txt: data for all observations in training set
+** y\_training.txt: list of activity codes for each observation in training set
+** Inertial Signals directory:  not used for this project
 
 
