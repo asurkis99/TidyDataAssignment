@@ -12,12 +12,9 @@ tidyData <- function(fileURL) {
     dir.create("data")
   }
   
-  URL ="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-   fileURL = URL
-  
   ## download the zip file and capture the date at which the download occurs 
   download.file(fileURL,destfile="./data/assign.csv",method="curl")
-  dateDownloaded <- format(Sys.time(),"%Y%m%d_%H%M")
+  dateDownloaded <- date()
   
   ## set working directory to data file and open zip file
   setwd("./data")
@@ -75,17 +72,17 @@ tidyData <- function(fileURL) {
   ## rename the first column "subjectID"
   names(X)[1] <- "subjectID"
   
-  
   ## reorder X by subjectID and by activity
   X <- X[order(X$subjectID,X$activity),]
   
   ## Assignment point 5:
   ##  From the data set in step 4, creates a second, independent tidy data set 
-  ##  with the average of each variable for each activity and each subject.  tmp <- melt(X, id = c("activity","subjectID"), variable.name="observationType")
+  ##  with the average of each variable for each activity and each subject.  
 
     ## first melting dataset so that the id variables are activity and subjectID
   ## the variable now contains all the different types of observations, so I 
   ## have renamed it observationType
+  Xmelt <- melt(X, id = c("activity","subjectID"), variable.name="observationType")
   
   ## taking melted dataset and averaging over the different observationTypes
   ## this creates a dataset with means for each subject and activity type
@@ -95,8 +92,12 @@ tidyData <- function(fileURL) {
   meanNames <- paste("mean of", names(Xmeans)[3:length(names(Xmeans))])
   names(Xmeans)[3:length(names(Xmeans))] <- meanNames 
   
+  ## return user to original directory
   setwd(curdir) 
-  write.csv(Xmeans, file = paste0("TidyDataset_",dateDownloaded,".csv"), row.names=FALSE)
   
+  ## write the table to that directory
+  write.table(Xmeans, file = paste0("TidyDataset.txt"), row.names=FALSE)
+ 
+  ## return the date the raw data was downloaded 
   dateDownloaded
 }
