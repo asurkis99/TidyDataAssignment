@@ -15,7 +15,7 @@ Data collected from 30 volunteers (19-48 years old) performing each of six activ
 Variable Name | Variable type | Variable description  | Possible values
 ------------- | ------------- | --------------------  | ---------------
 subjectID     |  Integer      | Unique identifier for each subject on which measurements were made  | integer values 1-30
-activity      |  Character    | Description of activity subject is engaged in when observations are made    | WALKING   WALKING\_UPSTAIRS   WALKING\_DOWNSTAIRS   SITTING   STANDING   LAYING
+activity      |  Character    | Description of activity subject is engaged in when observations are made    | WALKING    WALKING\_UPSTAIRS    WALKING\_DOWNSTAIRS     SITTING     STANDING     LAYING
 
 
 Feature Selection 
