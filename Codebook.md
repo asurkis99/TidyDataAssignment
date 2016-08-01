@@ -1,7 +1,5 @@
 # TidyDataAssignment Codebook
 
- 
-Information about the variables (including units) in the data set not contained in the tidy data
 Information about the summary choices you made
 Information about the experimental study design you used
 Also
@@ -15,7 +13,8 @@ Data collected from 30 volunteers (19-48 years old) performing each of six activ
 Variable Name | Variable type | Variable description  | Possible values
 ------------- | ------------- | --------------------  | ---------------
 subjectID     |  Integer      | Unique identifier for each subject on which measurements were made  | integer values 1-30
-activity      |  Character    | Description of activity subject is engaged in when observations are made    | WALKING    \nWALKING\_UPSTAIRS    WALKING\_DOWNSTAIRS     SITTING     STANDING     LAYING
+activity      |  Character    | Description of activity subject is engaged in when observations are made    | 6 possible values: WALKING, WALKING\_UPSTAIRS, WALKING\_DOWNSTAIRs, SITTING, STANDING, LAYING
+mean of [observation] | numeric | this is a mean value calculated for each observation type where the mean is for a given subject and activity | 
 
 
 Feature Selection 
