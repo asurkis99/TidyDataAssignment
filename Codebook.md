@@ -9,10 +9,13 @@ A common format for this doc is a word/text file
 There should be a section called “study design” that has a thorough description of how you collected the file 
 There must be a section called “code book” that describes each variable and its units
 
-Table Header  | Second Header 
-------------- | ------------- 
-Table Cell    | Cell 2        
-Cell 3        | Cell 4        
+Data Dictionary 
+Data collected from 30 volunteers (19-48 years old) performing each of six activities wearing a smartphone (Samsung Galaxy S II) on the waist. Data captured with embedded accelerometer and gyroscope was 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50 Hz. Further details of raw data are in README.txt file in directory ./data/UCI HAR dataset.
+
+Variable Name | Variable type | Variable description  | Possible values
+------------- | ------------- | --------------------  | ---------------
+subjectID     |  Integer      | Unique identifier for each subject on which measurements were made                    |
+activity      |  Character    |                       |
 
 Feature Selection 
 =================
