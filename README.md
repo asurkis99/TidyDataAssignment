@@ -1,5 +1,5 @@
 # TidyDataAssignment
-Code and documentation for JHU Coursera Getting and Cleaning Data class project
+JHU Coursera Getting and Cleaning Data class project
 
 ## Input file
 The raw data for this project is obtained by downloading a zipped file from the following URL:
